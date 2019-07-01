@@ -3,13 +3,11 @@ package com.josuemartinez.earthquakeapp;
 public class Earthquake {
 
     /** Magnitude of the Earthquake */
-    private String mMagnitude;
+    private double mMagnitude;
 
     /** Location of the Earthquake */
     private String mLocation;
 
-    /** Date of the Earthquake */
-    private String mDate;
 
     /** Time of the earthquake */
     private long mTimeInMilliseconds;
@@ -23,7 +21,7 @@ public class Earthquake {
      * @param timeInMilliseconds is the time in milliseconds (from the Epoch) when the
      *  earthquake happened
      */
-    public Earthquake(String magnitude, String location, long timeInMilliseconds) {
+    public Earthquake(double magnitude, String location, long timeInMilliseconds) {
         mMagnitude = magnitude;
         mLocation = location;
         mTimeInMilliseconds = timeInMilliseconds;
@@ -33,7 +31,7 @@ public class Earthquake {
     /**
      * Returns the magnitude of the earthquake
      */
-    public String getMagnitude() {return mMagnitude; }
+    public double getMagnitude() {return mMagnitude; }
 
 
     /**
@@ -41,11 +39,6 @@ public class Earthquake {
      */
     public String getLocation() {return mLocation; }
 
-
-    /**
-     * Returns the date of the earthquake
-     */
-    public String getDate() {return mDate; }
 
     /**
      * Returns the time of the earthquake.
